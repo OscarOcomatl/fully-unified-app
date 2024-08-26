@@ -37,7 +37,7 @@ class TaskDescriptionScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: (){
                 final title = controller.text;
-                context.read<SaveTask>().addTask(
+                context.read<TaskProvider>().addTask(
                   Task(
                     title: title, 
                     isCompleted: false

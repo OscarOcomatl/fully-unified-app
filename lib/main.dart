@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fully_unified_app/config/router/app_router.dart';
-import 'package:fully_unified_app/infraestructure/models/task/save_task.dart';
+import 'package:fully_unified_app/presentation/providers/tasks/task_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -8,7 +8,7 @@ void main() {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => SaveTask()
+          create: (context) => TaskProvider()
         )
       ],
       child: const MyApp()

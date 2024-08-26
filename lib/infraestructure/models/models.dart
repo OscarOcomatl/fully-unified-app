@@ -1,2 +1,2 @@
 export 'task/task_model.dart';
-export 'task/save_task.dart';
+export '../../presentation/providers/tasks/task_provider.dart';
